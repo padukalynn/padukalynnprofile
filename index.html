@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>—PadukaLynn Profile</title>
+    <style>
+        /* Menggunakan font modern */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            /* Foto ketiga sebagai latar belakang */
+            background-image: url('ea56a6a69178f40ef81456bb866d511e.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        /* Container dengan aspek rasio 9:16 */
+        .container {
+            width: 100%;
+            max-width: 400px; /* Ukuran lebar HP */
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.6); /* Overlay agar teks terbaca */
+            position: relative;
+            overflow-y: auto;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Foto kedua sebagai sampul */
+        .cover-photo {
+            width: 100%;
+            height: 250px;
+            background-image: url('Proyek Baru 1 [925B912].png');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid #00ffff;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -60px; /* Menaikkan foto profil ke area sampul */
+            padding: 20px;
+        }
+
+        /* Foto pertama sebagai profil lingkaran dengan border kilauan */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00ffff;
+            box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+            background-color: #000;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 26px;
+            font-weight: 700;
+            color: #00ffff; /* Neon Cyan */
+            text-shadow: 0 0 10px #00ffff;
+            margin-bottom: 5px;
+        }
+
+        .game-info {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(0, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            width: 90%;
+        }
+
+        .game-info p {
+            font-size: 14px;
+            color: #00ffff;
+            margin: 5px 0;
+            letter-spacing: 1px;
+        }
+
+        /* Button WhatsApp */
+        .wa-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: #00ffff;
+            border: 2px solid #00ffff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+            width: 80%;
+        }
+
+        .wa-button:hover {
+            background: #00ffff;
+            color: #000;
+            box-shadow: 0 0 20px #00ffff;
+        }
+
+        .wa-button i {
+            margin-right: 10px;
+        }
+
+        /* Animasi kilauan pada border profil */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #00ffff; }
+            50% { box-shadow: 0 0 20px #00ffff, 0 0 30px #008080; }
+            100% { box-shadow: 0 0 5px #00ffff; }
+        }
+
+        .profile-img {
+            animation: glow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="cover-photo"></div>
+
+        <div class="profile-section">
+            <img src="IMG_20260407_110835.jpg" alt="Profile" class="profile-img">
+            
+            <h1 class="name">—PadukaLynn</h1>
+            
+            <div class="game-info">
+                <p><strong>Game Name:</strong> RománticLynñ</p>
+                <p><strong>Game ID:</strong> 3246866473</p>
+            </div>
+
+            <a href="https://wa.me/628965227945" class="wa-button" target="_blank">
+                <span>Chat via WhatsApp</span>
+            </a>
+            
+            <p style="margin-top: 15px; font-size: 12px; color: rgba(0, 255, 255, 0.6);">089652127945</p>
+        </div>
+    </div>
+
+</body>
+</html>
